@@ -19,24 +19,39 @@
         background: rgb(202, 201, 201);
         justify-content: center;
      }
-  .nav {
+     .nav {
   display: flex;
   justify-content: flex-end;
   position: fixed;
-  top: 0 left;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-red);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
 }
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
 }
     </style>
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-         <h1>"Hello World, we are software developers!"</h1>
-    <script  src="js/index.js"></script>
+   
 
-    <nav id="navbar">
+    <nav id="navbar" class="nav">
         <a href="">
-          <ul>
+          <ul class="nav-list">
             <li>
               <a href="#welcome-section">Welcome</a>
             </li>
@@ -47,17 +62,23 @@
         </a>
       </nav>
     
-      <section id="welcome-section"><h1>Welcome</h1></section>
+      <section id="welcome-section" class="welcome-section"><h1>Welcome</h1></section>
       <section id="projects" class="project-tile">
         <div>
           <a href="https://codepen.io/FreeCodeCamp/">
             <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
           </a>
+          <a
+          href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
+          target="_blank"
+          class="project project-tile"
+        >
         </div>
       </section>
       <section>
         <a id="profile-link" href="https://github.com/Rastanan17" target="_blank">Profile Adrian Chavez</a>
         <a href="https://github.com/josepucciarelli">Profile Jose Pucciarelli</a>
       </section>
+ <script  src="js/index.js"></script>
   </body>
 </html>
