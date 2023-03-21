@@ -6,13 +6,58 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-      
+      @media (min-width: 560px) {
+      .main-section {
+            margin: 40px;
+            background: pink;
+            justify-content: center;
+      }
+    }
+    @media (min-width: 1200px) {
+  .main-section {
+        margin: 40px;
+        background: rgb(202, 201, 201);
+        justify-content: center;
+     }
+  .nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0 left;
+}
+}
     </style>
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    
+         <h1>"Hello World, we are software developers!"</h1>
     <script  src="js/index.js"></script>
+
+    <nav id="navbar">
+        <a href="">
+          <ul>
+            <li>
+              <a href="#welcome-section">Welcome</a>
+            </li>
+            <li>
+              <a href="#projects">projects</a>
+            </li>
+          </ul>
+        </a>
+      </nav>
+    
+      <section id="welcome-section"><h1>Welcome</h1></section>
+      <section id="projects" class="project-tile">
+        <div>
+          <a href="https://codepen.io/FreeCodeCamp/">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
+          </a>
+        </div>
+      </section>
+      <section>
+        <a id="profile-link" href="https://github.com/Rastanan17" target="_blank">Profile Adrian Chavez</a>
+        <a href="https://github.com/josepucciarelli">Profile Jose Pucciarelli</a>
+      </section>
   </body>
 </html>
